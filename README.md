@@ -1,8 +1,18 @@
-# React + Vite
+# Todo app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An ice tea e-commerce website. I 'm showcasing filter functionality depending on company, price, flavor and user input. Lastly there is card functionality showing price for each item and total price aswell. My database is custom made using skroutz.gr products info.
 
-Currently, two official plugins are available:
+![Alt Text](IceTea.gif)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Technologies
+
+The project was built in React js making use of html,css and javascript knowledge.
+
+# What I learned and practiced 
+- React js components, props
+- Redux toolkit (including useSelector and useDispatch)
+- useContext
+- useState, useEffect
+
+
+
