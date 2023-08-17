@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
+:root {
+  /* Colors */
+  --bg-color-1: #91d3cc;
+  --bg-color-2: #64c1b8;
+  --bg-color-3: #22a699;
+  --text-color-1: #03110f;
+  --primary-color-1: #f29727;
+  --primary-color-2: #fef5e9;
+  --primary-color-3: #f24c3d;
+  --primary-color-4: #f2be22;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  color: var(--text-color-1);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 10px 200px 12px var(--primary-color-2);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color-3);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color-1);
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}

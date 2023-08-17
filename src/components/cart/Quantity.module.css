@@ -1,0 +1,32 @@
+.item_counter {
+  display: flex;
+  margin-top: 2.3rem;
+  justify-content: center;
+}
+
+.item_counter input {
+  width: 3.4rem;
+  padding: 0.2rem;
+}
+
+.item_counter button {
+  background-color: var(--primary-color-4);
+  border: none;
+  width: 2rem;
+}
+
+.item_counter button:hover {
+  cursor: pointer;
+}
+.item_counter button:active {
+  cursor: pointer;
+  background-color: var(--primary-color-1);
+}
+
+@media screen and (max-width: 580px) { 
+  .item_counter {
+    display: flex;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,92 @@
+/* Navbar container */
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  background-color: var(--bg-color-3);
+  border-bottom: 2px solid var(--primary-color-1);
+  top: 0;
+  z-index: 102;
+}
+
+/* Logo */
+.logo {
+  position: relative;
+  left: 3rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-color-1);
+  cursor: pointer;
+}
+
+/* Logo tea part */
+.logo span {
+  color: var(--primary-color-1);
+}
+
+/* Navbar search field */
+.search {
+  position: relative;
+  right: 4%;
+  outline: none !important;
+  border: none;
+  border-radius: 4px;
+  height: 1.4rem;
+  width: 14rem;
+  padding: 0.6rem;
+  background-color: var(--primary-color-2);
+}
+
+/* Navbar icon bag */
+.bag {
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-top: 0.4rem;
+  position: relative;
+}
+
+.cart_number {
+  position: absolute;
+  top: -0.6rem;
+  right: -0.6rem;
+  background-color: var(--primary-color-3);
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  padding: 4px;
+  font-size: 10px;
+  z-index: 105;
+  display: flex;
+  justify-content: center; /* Horizontally center the text */
+  align-items: center;
+}
+
+/* Media queries */
+@media screen and (max-width: 580px) {
+  .navbar {
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    height: 10rem;
+  }
+  .logo {
+    left: 0;
+  }
+  .search {
+    position: relative;
+    right: 0.6%;
+    width: 14rem;
+  }
+
+  .bag {
+    font-size: 1.6rem;
+  }
+}

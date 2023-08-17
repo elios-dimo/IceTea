@@ -1,0 +1,142 @@
+/* Sidebar container */
+.sidebar {
+  width: 16rem;
+  height: 100vh;
+  background-color: var(--primary-color-2);
+  border-right: 2px solid var(--primary-color-1);
+  transition: transform 0.5s ease;
+  transform: translateX(0);
+  z-index: 99;
+  position: fixed;
+  top: 4rem;
+}
+
+/* h2,h4 inside our sidebar */
+.sidebar h2,
+h4 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.sidebar h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.sidebar h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: relative;
+  right: 20%;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Each category */
+.brand,
+.price,
+.flavor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: center;
+  margin-left: 4rem;
+}
+
+/* Editing our category options of input type radio */
+.radio_options {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 0.2rem;
+  height: 20px;
+  width: 20px;
+  transition: all 0.15s;
+  background: var(--bg-color-1);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 50%;
+  margin-right: 0.6rem;
+  margin-top: 0.4rem;
+}
+.radio_options:hover {
+  background: var(--primary-color-1);
+  cursor: pointer;
+}
+.options:hover .lbtext {
+  color: var(--primary-color-1);
+  cursor: pointer;
+}
+.radio_options:checked {
+  background: var(--primary-color-3);
+}
+
+.radio_options:checked::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.radio_options:checked::after {
+  opacity: 1;
+  position: absolute;
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: var(--primary-color-2);
+  border-radius: 50%;
+  top: 6px;
+  left: 6px;
+  transition: opacity 0.2s ease;
+}
+
+/* Our toggle button which doesn't appear over 727pixels width only below */
+.appear {
+  font-size: 2.4rem;
+  color: var(--primary-color-1);
+  position: fixed;
+  top: 30rem;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  transform: translateX(-100%);
+  z-index: 100;
+}
+
+.icon_color {
+  fill: var(--text-color-1);
+}
+
+/* Media queries */
+@media screen and (max-width: 580px) {
+  .sidebar {
+    width: 12rem;
+    transform: translateX(-100%);
+    position: fixed;
+    top: 10rem;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .appear {
+    display: inline;
+    transform: translateX(10%);
+  }
+
+  .sidebar h4 {
+    right: 10%;
+  }
+
+  .brand,
+  .price,
+  .flavor {
+    margin-top: 0.3rem;
+    margin-left: 1.6rem;
+  }
+}
