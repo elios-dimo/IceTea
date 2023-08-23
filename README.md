@@ -1,5 +1,5 @@
 # IceTea e-commerce
-An ice tea e-commerce website. I 'm showcasing filter functionality depending on company, price, flavor and user input. Lastly there is cart functionality showing price for each item and total price aswell. My database is custom made using skroutz.gr products info.
+Ice tea e-commerce website. I 'm showcasing filter functionality depending on company, price, flavor and user input. Lastly there is cart functionality showing price for each item and total price aswell. My database is custom made using skroutz.gr products info.
 
 ![Alt Text](IceTea.gif)
 
